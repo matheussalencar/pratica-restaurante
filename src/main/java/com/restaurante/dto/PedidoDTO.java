@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @Data
 @Builder
 public class PedidoDTO {
-    private Integer id;
+    private Long id;
     private List<Prato> listaPratos;
     private Mesa mesa;
     private BigDecimal valorTotal;

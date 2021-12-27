@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Data
 @Builder
 public class PratoDTO {
-    private Integer id;
+    private Long id;
     private String description;
     private Integer quantity;
     private BigDecimal preco;

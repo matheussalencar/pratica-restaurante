@@ -15,7 +15,7 @@ import java.util.List;
 @Data
 @Builder
 public class Mesa {
-    private Integer id;
+    private Long id;
     private List<Pedido> listaPedidos;
     private BigDecimal valorTotalConsumido;
 }
