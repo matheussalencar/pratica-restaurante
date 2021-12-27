@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @AllArgsConstructor
@@ -15,5 +16,5 @@ public class Pedido {
     private Integer id;
     private Mesa mesa;
     private List<Prato> listaPratos;
-    private double valorTotal;
+    private BigDecimal valorTotal;
 }
