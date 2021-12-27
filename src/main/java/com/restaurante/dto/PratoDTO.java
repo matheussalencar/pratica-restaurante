@@ -19,7 +19,7 @@ public class PratoDTO {
     private Long id;
     private String description;
     private Integer quantity;
-    private BigDecimal preco;
+    private Double preco;
 
 
     public static Prato converte(PratoDTO dto) {

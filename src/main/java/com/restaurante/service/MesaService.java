@@ -5,10 +5,8 @@ import com.restaurante.entity.Mesa;
 import com.restaurante.entity.Pedido;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
+
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class MesaService {
@@ -19,7 +17,11 @@ public class MesaService {
     }
 
     public void create (Mesa mesa) {
-        mesaRepository.create(mesa);
+        try {
+            mesaRepository.create(mesa);
+        } catch (RuntimeException e) {
+            throw new RuntimeException("Falha ao cadastrar");
+        }
     }
 
     public List<Mesa> listar() {
@@ -27,6 +29,7 @@ public class MesaService {
     }
 
     public List<Pedido> listaPedidos(Long id) {
+
         return mesaRepository.get(id).getListaPedidos();
     }
 }

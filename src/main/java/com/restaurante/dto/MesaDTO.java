@@ -19,12 +19,14 @@ import java.util.stream.Collectors;
 public class MesaDTO {
     private Long id;
     private List<Pedido> listaPedidos;
-    private BigDecimal valorTotalConsumido;
+    private Double valorTotalConsumido;
 
 
     public static Mesa converte(MesaDTO dto) {
         Mesa mesa = Mesa.builder()
+                .id(dto.getId())
                 .listaPedidos(dto.getListaPedidos())
+                .valorTotalConsumido(dto.getValorTotalConsumido())
                 .build();
 
         return mesa;

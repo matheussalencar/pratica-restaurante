@@ -14,7 +14,6 @@ import java.util.List;
 @Builder
 public class Pedido {
     private Long id;
-    private Mesa mesa;
     private List<Prato> listaPratos;
-    private BigDecimal valorTotal;
+    private Double valorTotal;
 }

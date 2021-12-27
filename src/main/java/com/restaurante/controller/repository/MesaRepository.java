@@ -23,6 +23,8 @@ public class MesaRepository {
 
     public Mesa get(Long id) {
         Optional<Mesa> optional=  mesas.stream().filter(m -> m.getId().equals(id)).findAny();
+        System.out.println("Entrei aqui");
+        System.out.println(optional.get());
         return optional.orElse(new Mesa());
     }
 

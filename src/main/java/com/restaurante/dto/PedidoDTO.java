@@ -20,8 +20,7 @@ import java.util.stream.Collectors;
 public class PedidoDTO {
     private Long id;
     private List<Prato> listaPratos;
-    private Mesa mesa;
-    private BigDecimal valorTotal;
+    private Double valorTotal;
 
 
     public static Pedido converte(PedidoDTO dto) {
@@ -29,7 +28,6 @@ public class PedidoDTO {
 
                 .id(dto.getId())
                 .listaPratos(dto.getListaPratos())
-                .mesa(dto.getMesa())
                 .valorTotal(dto.getValorTotal())
                 .build();
 
@@ -39,7 +37,6 @@ public class PedidoDTO {
     public static PedidoDTO converte(Pedido pedido) {
         return PedidoDTO.builder()
                 .id(pedido.getId())
-                .mesa(pedido.getMesa())
                 .valorTotal(pedido.getValorTotal())
                 .build();
     }

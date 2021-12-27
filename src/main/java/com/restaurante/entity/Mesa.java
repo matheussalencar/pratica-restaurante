@@ -17,5 +17,5 @@ import java.util.List;
 public class Mesa {
     private Long id;
     private List<Pedido> listaPedidos;
-    private BigDecimal valorTotalConsumido;
+    private Double valorTotalConsumido;
 }

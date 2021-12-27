@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Builder
 public class Prato {
     private Long id;
-    private BigDecimal preco;
+    private Double preco;
     private String descricao;
     private Integer quantidade;
 }
