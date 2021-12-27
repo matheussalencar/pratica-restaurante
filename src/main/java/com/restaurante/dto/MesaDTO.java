@@ -1,6 +1,7 @@
 package com.restaurante.dto;
 
 import com.restaurante.entity.Mesa;
+import com.restaurante.entity.Pedido;
 import com.restaurante.entity.Prato;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,7 +18,7 @@ import java.util.stream.Collectors;
 @Builder
 public class MesaDTO {
     private Integer id;
-    private List<PedidoDTO> listaPedidosDTO;
+    private List<Pedido> listaPedidos;
     private Double valorTotalConsumido;
 
 
@@ -25,10 +26,10 @@ public class MesaDTO {
         Mesa mesa = Mesa.builder()
 
                 .id(dto.getId())
-//                .listaPedidos(dto.getListaPedidosDTO())
+                .listaPedidos(dto.getListaPedidos())
                 .build();
 
-        return prato;
+        return mesa;
     }
 
     public static PratoDTO converte(Prato prato) {

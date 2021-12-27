@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,7 +19,7 @@ public class PratoDTO {
     private Integer id;
     private String description;
     private Integer quantity;
-    private Double preco;
+    private BigDecimal preco;
 
 
     public static Prato converte(PratoDTO dto) {
