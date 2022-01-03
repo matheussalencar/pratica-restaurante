@@ -1,7 +1,6 @@
-package com.restaurante.controller.repository;
+package com.restaurante.repository;
 
 import com.restaurante.entity.Mesa;
-import com.restaurante.service.MesaService;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

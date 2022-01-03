@@ -1,4 +1,4 @@
-package com.restaurante.controller.repository;
+package com.restaurante.repository;
 
 import com.restaurante.entity.Pedido;
 import org.springframework.stereotype.Component;

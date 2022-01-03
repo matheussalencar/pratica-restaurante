@@ -1,7 +1,7 @@
 package com.restaurante.service;
 
 
-import com.restaurante.controller.repository.PedidoRepository;
+import com.restaurante.repository.PedidoRepository;
 import com.restaurante.entity.Pedido;
 import org.springframework.stereotype.Service;
 

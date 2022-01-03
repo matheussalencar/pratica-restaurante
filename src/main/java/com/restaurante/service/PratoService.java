@@ -1,7 +1,6 @@
 package com.restaurante.service;
 
-import com.restaurante.controller.repository.PratoRepository;
-import com.restaurante.entity.Pedido;
+import com.restaurante.repository.PratoRepository;
 import com.restaurante.entity.Prato;
 import org.springframework.stereotype.Service;
 
